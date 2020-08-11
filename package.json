@@ -1,0 +1,24 @@
+{
+  "name": "multipage-test",
+  "version": "1.0.0",
+  "description": "Use Selenium to function test example/calculator/vanilla-spa",
+  "main": null,
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node node_modules/http-server/bin/http-server -p 8082 src",
+    "stop": "taskkill -F -IM node.exe",
+    "test": "nyc --reporter=html --reporter=text --reporter=clover mocha test/**/*.js",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "author": "Andreas Arnesson and Emil Folino",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^4.1.0",
+    "selenium-webdriver": "^3.6.0",
+    "http-server": "^0.11.1",
+    "nyc": "^14.1.1",
+    "coveralls": "^3.1.0"
+  }
+}

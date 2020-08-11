@@ -1,0 +1,5 @@
+**Testcase1** - Start-page:  Startsidan bör ha titeln "React App" och header "Me".
+
+**Testcase2** - week-1:  Användaren ska från förstasidan kunna trycka på en länk för att se redovisningstexten för vecka 1.
+
+**Testcase3** - week-1: Kontroll av "URL ending" görs.
